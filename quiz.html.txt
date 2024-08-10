@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="zB5LkIkc2swnYdJ2NwqAJu7MvYARKruRJN5wuCvY">
+
+            <meta name="description" content="O sistema interativo oferece ferramentas poderosas para criar experiências de questionários. Incorpore-os em qualquer lugar em seus aplicativos web/móveis e comece a coletar resultados como mágica.">
+    
+            <title>720 Receitas Zero</title>
+    
+            <link rel="icon" href="https://assets.sistemainterativo.online/img/logo.svg" type="image/svg+xml"/>
+    
+    <link rel="preload" as="style" href="https://assets.sistemainterativo.online/build/assets/app-CDgRb_tI.css" /><link rel="modulepreload" href="https://assets.sistemainterativo.online/build/assets/interact-CUppaYXO.js" /><link rel="modulepreload" href="https://assets.sistemainterativo.online/build/assets/bootstrap-BLpK3i3c.js" /><link rel="stylesheet" href="https://assets.sistemainterativo.online/build/assets/app-CDgRb_tI.css" data-navigate-track="reload" /><script type="module" src="https://assets.sistemainterativo.online/build/assets/interact-CUppaYXO.js" data-navigate-track="reload"></script>
+    
+    
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Poppins:400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+
+    <style>
+        html, body {
+            font-family: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+
+    <script>
+                    window.animationDelay = 10;
+        
+        function redirect(button, url) {
+            if (button.classList.contains('active')) {
+                button.classList.add('no-active');
+                button.classList.remove('active');
+            } else {
+                button.classList.remove('no-active');
+                button.classList.add('active');
+            }
+
+            setTimeout(function() {
+                window.location.href = url;
+            }, 200);
+        }
+
+        function backPage() {
+            window.history.back();
+        }
+
+        window.identification = '2d5f9e28-2999-4112-a012-59a207837154'
+
+        // has user in localstorage
+        if (sessionStorage.getItem('identification_3286')) {
+            window.identification = sessionStorage.getItem('identification_3286')
+        } else {
+            sessionStorage.setItem('identification_3286', window.identification)
+        }
+    </script>
+
+</head>
+<body
+    class="antialiased"
+    style="background-color: #f9fafb;"
+>
+    <div>
+            <main
+        class="py-6 blocks gap-y-6 flex flex-col items-center justify-center"
+    >
+                                        <section
+    class="flex w-full max-w-md items-center justify-center px-5 text-center"
+>
+    <img
+        src="https://cdn.sistemainterativo.online/projects/1282/b9e0d483-31b4-4c52-9277-b282b629b1c1"
+        class="inline-block w-full"
+        alt="Imagem" />
+</section>
+                                                        <section
+    class="flex w-full flex-col max-w-md justify-center items-center px-5 gap-2 text-left"
+>
+    <h1
+        class="font-bold break-words text-3xl leading-8"
+        style="color:#334155; white-space: break-spaces;"
+    >Só vá para página se você...</h1>
+
+    </section>
+                                                        <section class="w-full max-w-md px-5">
+    <p
+        class="text-base break-words text-left"
+        style="color:#334155; white-space: break-spaces;"
+    >✔ Estiver buscando variedade e novas ideias para suas refeições, sem abrir mão do prazer de comer.
+
+✔ Se você quer desfrutar de uma culinária deliciosa e sem restrições
+
+✔ Desejar reduzir o consumo de açúcar e glúten sem abrir mão de sobremesas e pratos saborosos.</p>
+</section>
+                                                        <section
+    class="button-block-66b7c17f2c37b flex w-full justify-center items-end px-5"
+>
+    <div
+        class="w-full max-w-md"
+    >
+        <button
+            onclick="redirect(this, 'https://go.hotmart.com/E94852428I?ap=23fa')"
+            class="block w-full text-center font-semibold py-6"
+            style="background-color: #61CE70; border-radius: 1rem; border: solid #020617; border-width: 0 0 5px 0; color:#f9fafb;"
+        >
+            SIM, QUERO MUITO!
+        </button>
+    </div>
+</section>
+
+<style>
+    .button-gradient-66b7c17f2c37b {
+        background: linear-gradient(0deg, #f9fafb 50%, transparent 100%);
+    }
+
+    .button-block-66b7c17f2c37b .active {
+        background-color: #61CE70 !important;
+        border-color: #020617 !important;
+        color: #020617 !important;
+    }
+
+    </style>
+                        
+        <script>
+    function initIngest() {
+        console.log('ingest result')
+
+        // send data to ingest
+        axios.post('/ingest', {
+            identification: window.identification,
+            projectId: 3286,
+            currentPageId: 137662,
+            originPageId: '030cff3a-475c-4cf1-a047-f8857062e786'
+        })
+            .then(response => {
+                console.log(response.data)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
+
+    setTimeout(() => {
+        initIngest()
+    }, 1000)
+</script>
+    </main>
+    </div>
+
+    </body>
+</html>
